@@ -1,0 +1,50 @@
+version: 2
+models:
+  - name: dim_produtos
+    description: > 
+      Tabela dimensão dos produtos da Northwind. 
+      Possui categorização para todos os produtos catalogados.
+    columns:
+      - name: PK_PRODUTO
+        description: Chave primária da dimensão de produtos
+        tests:
+          - unique
+          - not_null
+          
+      - name: NM_PRODUTO
+        description: Nome do produto
+        tests:
+         - not_null
+
+      - name: QUANTIDADE_POR_UNIDADE
+        description: Quantidade por unidade do produto
+
+      - name: PRECO_POR_UNIDADE
+        description: Preço por unidade do produto
+
+      - name: UNIDADE_EM_ESTOQUE
+        description: Quantidade em estoque
+
+      - name: UNIDADE_POR_PEDIDO
+        description: Unidade por pedido
+
+      - name: NIVEL_DE_PEDIDO
+        description: Nível de pedido
+
+      - name: IS_DISCONTINUADO
+        description: Validade do produto. Se está descontinuado ou não
+
+      - name: NM_CATEGORIA
+        description: Categoria do produto
+ 
+      - name: DESCRICAO_CATEGORIA
+        description: Descrição detalhada da categoria do produto
+ 
+      - name: NM_FORNECEDOR
+        description: Nome do Fornecedor
+ 
+      - name: CIDADE_FORNECEDOR
+        description: Cidade do fornecedor
+ 
+      - name: PAIS_FORNECEDOR
+        description: País do fornecedor
