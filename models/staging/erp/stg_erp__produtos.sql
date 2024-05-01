@@ -4,7 +4,7 @@ with
             cast(ID as int) as pk_produto
             , cast(PRODUCTNAME as string) as nm_produto 
             , cast(SUPPLIERID as int) as fk_fornecedor
-            , cast(CATEGORYID as int) as fk_categorua
+            , cast(CATEGORYID as int) as fk_categoria
             , cast(QUANTITYPERUNIT as string) as quantidade_por_unidade
             , cast(UNITPRICE as numeric(18,2)) as preco_por_unidade
             , cast(UNITSINSTOCK as int) as unidade_em_estoque
