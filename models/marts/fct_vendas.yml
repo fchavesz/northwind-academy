@@ -1,0 +1,12 @@
+version: 2
+models:
+  - name: fct_vendas
+    description: > 
+      Tabela fato das vendas da Northwind. 
+      Possui categorização para todos os produtos catalogados.
+    columns:
+      - name: pk_vendas
+        description: Chave primária sk da fato vendas
+        tests:
+          - unique
+          - not_null
