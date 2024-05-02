@@ -8,6 +8,19 @@ sources:
       - name: category
       - name: product
       - name: supplier
+      - name: _order_
+        columns: 
+          - name: id
+            tests: 
+              - unique
+              - not_null
+      - name: orderdetail 
+        columns: 
+          - name: id
+            tests: 
+              - unique
+              - not_null 
+      - name: employee
 
       
     
